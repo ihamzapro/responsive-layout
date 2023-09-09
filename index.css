@@ -114,3 +114,177 @@ img {
 .show-menu {
   top: 0;
 }
+
+/* ============================Home======================= */
+
+.home {
+  position: relative;
+}
+.home--container {
+  padding-top: 8rem;
+  height: 100vh;
+}
+
+.home--content {
+  position: relative;
+  z-index: 2;
+}
+.home--data {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.home--subtitles {
+  font-size: 0.839rem;
+  color: hsl(195, 100%, 30%);
+  letter-spacing: 3px;
+}
+.home--title {
+  font-size: 2.25rem;
+  /* font-family: ; */
+  color: hsl(210, 52%, 20%);
+}
+.home--description {
+  margin-bottom: 2.5rem;
+}
+.home--button {
+  display: inline-block;
+  background: linear-gradient(90deg, hsl(210, 55%, 20%), hsl(192, 62%, 25%));
+  color: #fff;
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 24px 32px hsl(210, 54%, 24%, 0.3);
+}
+.home--bird-1,
+.home--bird-2 {
+  position: absolute;
+  width: 60px;
+}
+.home--bird-1 {
+  bottom: -6rem;
+  rotate: -30deg;
+}
+.home--bird-2 {
+  top: 4.5rem;
+  right: 0;
+  rotate: -15deg;
+}
+.home--images {
+  z-index: 1;
+}
+.home--images img {
+  position: absolute;
+  max-width: initial;
+  width: 600px;
+  left: -7rem;
+  bottom: 0;
+}
+@media screen and (max-width: 305px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .home--title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-height: 800px) {
+  .home--container {
+    padding-top: 10rem;
+  }
+  .home--images img {
+    width: 700px;
+    left: -12rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .home--content {
+    max-width: 305px;
+  }
+  .home--bird-2 {
+    right: -3rem;
+  }
+  .home--images img {
+    width: initial;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .nav {
+    height: calc(3.5rem + 2rem);
+    column-gap: 4rem;
+  }
+  .nav--toggle,
+  .nav--close {
+    display: none;
+  }
+  .nav--menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav--list {
+    flex-direction: row;
+    column-gap: 5rem;
+  }
+  .nav--buttons {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav-logo {
+    width: 48px;
+  }
+  .home--content {
+    max-width: 550px;
+  }
+  .home--data {
+    row-gap: 1rem;
+  }
+  .home--subtitles {
+    font-size: 1rem;
+  }
+  .home--description {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .container {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .home--container {
+    height: 950px;
+    padding-top: 10rem;
+  }
+  .home--bird-1,
+  .home--bird-2 {
+    width: 80px;
+  }
+  .home--bird-1 {
+    bottom: -7rem;
+    left: -7rem;
+  }
+  .home--bird-2 {
+    top: 0;
+    right: -6rem;
+  }
+  .home--images img {
+    bottom: -3rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: hsl(220, 24%, 15%);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: hsl(220, 24%, 25%);
+  }
+}
